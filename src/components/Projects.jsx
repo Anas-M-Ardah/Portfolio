@@ -4,7 +4,7 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img3.png";
 import projImg3 from "../assets/img/project-img4.png";
 import projImg4 from "../assets/img/project-img5.png";
-import projImg5 from "../assets/img/project-img6.png";
+import projImg5 from "../assets/img/project-img6.jpg";
 import projImg6 from "../assets/img/project-img7.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 // import 'animate.css';
@@ -13,6 +13,13 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
 
   const projects = [
+    {
+      title: "Visit Petra",
+      description: "Welcome to the Visit Petra project! This website is designed to provide a comprehensive guide to exploring Petra, the ancient city in Jordan.",
+      imgUrl: projImg5,
+      repoUrl: "https://github.com/Anas-M-Ardah/Visit-Petra",
+      liveUrl: "https://anas-m-ardah.github.io/Visit-Petra/",
+    },
     {
       title: "Joke Teller",
       description: "a fun app that fetches and tells jokes",
@@ -40,13 +47,6 @@ export const Projects = () => {
       imgUrl: projImg4,
       repoUrl: "https://github.com/Anas-M-Ardah/NASA-API-Pictures",
       liveUrl: "https://anas-m-ardah.github.io/NASA-API-Pictures/",
-    },
-    {
-      title: "Custom Countdown",
-      description: "a web application that counts down to a specific date",
-      imgUrl: projImg5,
-      repoUrl: "https://github.com/Anas-M-Ardah/Custom-Countdown",
-      liveUrl: "https://anas-m-ardah.github.io/Custom-Countdown/",
     },
     {
       title: "Calulator",
