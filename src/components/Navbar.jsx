@@ -10,7 +10,7 @@ import navIcon3 from '../assets/img/nav-icon3.svg';
 
 function NavBar() {
 
-  const linkedInLink = 'https://www.linkedin.com/in/anas-al-ardah-1b70b9271';
+  const linkedInLink = 'https://www.linkedin.com/in/anas-alardah';
   const emailLink = 'mailto:anas.m.ardah@gmail.com';
   const githubLink = 'https://github.com/Anas-M-Ardah';
   const resumeLink = 'https://drive.google.com/file/d/1sdRoNt6mOyP_8wxK1po4Nc3gxV0EAym2/view?usp=sharing'
@@ -56,9 +56,9 @@ function NavBar() {
           </Nav>
           <span className='navbar-text'>
            <div className='social-icon'>
-            <a href={linkedInLink}><img src={navIcon1} alt="" /></a>
-            <a href={githubLink}><img src={navIcon2} alt="" /></a>
-            <a href={emailLink}><img src={navIcon3} alt="" /></a>
+            <a href={linkedInLink} target='_blank'><img src={navIcon1} alt="linkedIn Profile" /></a>
+            <a href={githubLink} target='_blank' ><img src={navIcon2} alt="GitHub Profile" /></a>
+            <a href={emailLink} ><img src={navIcon3} alt="Email" /></a>
            </div>
            <button className='vvd' onClick={() => window.open(resumeLink, '_blank')}><span>Download CV</span></button>
           </span>
