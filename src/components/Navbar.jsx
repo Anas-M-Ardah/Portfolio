@@ -13,6 +13,7 @@ function NavBar() {
   const linkedInLink = 'https://www.linkedin.com/in/anas-al-ardah-1b70b9271';
   const emailLink = 'mailto:anas.m.ardah@gmail.com';
   const githubLink = 'https://github.com/Anas-M-Ardah';
+  const resumeLink = 'https://drive.google.com/file/d/1sdRoNt6mOyP_8wxK1po4Nc3gxV0EAym2/view?usp=sharing'
 
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
@@ -59,7 +60,7 @@ function NavBar() {
             <a href={githubLink}><img src={navIcon2} alt="" /></a>
             <a href={emailLink}><img src={navIcon3} alt="" /></a>
            </div>
-           <button className='vvd' onClick={() => window.open('https://drive.google.com/file/d/1cxeIrNIcpGouqDW0lOjvXdoLOP5V80ti/view?usp=sharing', '_blank')}><span>Download CV</span></button>
+           <button className='vvd' onClick={() => window.open(resumeLink, '_blank')}><span>Download CV</span></button>
           </span>
         </Navbar.Collapse>
       </Container>
