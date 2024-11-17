@@ -13,7 +13,7 @@ function NavBar() {
   const linkedInLink = 'https://www.linkedin.com/in/anas-alardah';
   const emailLink = 'mailto:anas.m.ardah@gmail.com';
   const githubLink = 'https://github.com/Anas-M-Ardah';
-  const resumeLink = 'https://drive.google.com/file/d/15bMXskUjUO0uoAxhUPtm99p8J_Ksr2gs/view?usp=sharing';
+  const resumeLink = 'https://drive.google.com/file/d/1_CWVFRuvZ5mzXi7ondYHtgg2WwHr4iqR/view?usp=drive_link';
 
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);

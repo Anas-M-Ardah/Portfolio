@@ -5,7 +5,7 @@ import headerImg from "../assets/img/header-img.svg";
 import { useState, useEffect } from "react";
 
 function Banner () {
-    const resumeLink = 'https://drive.google.com/file/d/15bMXskUjUO0uoAxhUPtm99p8J_Ksr2gs/view?usp=sharing';
+    const resumeLink = 'https://drive.google.com/file/d/1_CWVFRuvZ5mzXi7ondYHtgg2WwHr4iqR/view?usp=drive_link';
     const toRotate = ["Web Developer", "Associate Cloud Engineer", "Software Engineer"];
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
