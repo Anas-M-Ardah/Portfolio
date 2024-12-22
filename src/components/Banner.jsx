@@ -1,12 +1,11 @@
 import { Container } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import { Col, Row } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
 import { useState, useEffect } from "react";
 
 function Banner () {
     const resumeLink = 'https://drive.google.com/file/d/1_CWVFRuvZ5mzXi7ondYHtgg2WwHr4iqR/view?usp=drive_link';
-    const toRotate = ["Web Developer", "Associate Cloud Engineer", "Software Engineer"];
+    const toRotate = ["a Web Developer", "an Associate Cloud Engineer", "a Software Engineer", "a Backend Developer"];
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
@@ -48,19 +47,16 @@ function Banner () {
 
     return (
         <section className="banner" id="home">
-            <Container>
+            <Container style={{paddingBottom : '8%'}}>
                 <Row>
-                    <Col xs={12} md={6} xl={7}>
+                    <Col xs={12} md={12} xl={12}>
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1>
-                            {`Hi, I'm Anas `}
+                            {`Hi, I'm Anas, `}
                             <span className="wrap">{text}</span>
                         </h1>
                         <p>Looking for a challenging position in a reputed organization to utilize my skills and knowledge for the growth of the organization.</p>
                         <button onClick={handleDownload}>Download CV <ArrowRightCircle size={25} /></button>
-                    </Col>
-                    <Col xs={12} md={6} xl={5}>
-                        <img src={headerImg} alt="Header Img" />
                     </Col>
                 </Row>
             </Container>

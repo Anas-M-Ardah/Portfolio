@@ -7,12 +7,22 @@ import projImg4 from "../assets/img/project-img5.png";
 import projImg5 from "../assets/img/project-img6.jpg";
 import projImg6 from "../assets/img/project-img7.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import projImg7 from "../assets/img/final.jpg";
+import projImg8 from "../assets/img/blog.png";
+import projImg9 from "../assets/img/paintclone.png";
 // import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
   const projects = [
+    {
+      title: "E-Commerce Backend System",
+      description: "a backend system for an e-commerce website",
+      imgUrl: projImg7,
+      repoUrl: "https://github.com/Anas-M-Ardah/Ecommerce-Backend",
+      liveUrl: "https://backend-final-2-m4zr.onrender.com/api-docs/",
+    },
     {
       title: "Visit Petra",
       description: "Welcome to the Visit Petra project! This website is designed to provide a comprehensive guide to exploring Petra, the ancient city in Jordan.",
@@ -55,6 +65,19 @@ export const Projects = () => {
       repoUrl: "https://github.com/Anas-M-Ardah/Calculator",
       liveUrl: "https://anas-m-ardah.github.io/Calculator/",
     },
+    {
+      title: "Blogging Backend System",
+      description: "a blogging backend system with authentication",
+      imgUrl: projImg8,
+      repoUrl: "https://github.com/SD-0924/anas-alardah-blogging-system-with-sequelize",
+    },
+    {
+      title: "Paint Clone",
+      description: "a clone of the popular paint app",
+      imgUrl: projImg9,
+      repoUrl: "https://github.com/Anas-M-Ardah/Paint-Clone",
+      liveUrl: "https://anas-m-ardah.github.io/Paint-Clone/",
+    }
   ];
 
   return (

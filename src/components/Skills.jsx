@@ -1,6 +1,8 @@
 import html from "../assets/img/html-5-logo.svg";
 import css from "../assets/img/css-logo.svg";
 import js from "../assets/img/js-logo.svg";
+import tsc from "../assets/img/new-logos/typescript.svg";
+import jest from "../assets/img/new-logos/jest-2.svg";
 import gcp from "../assets/img/cloud-logo.svg";
 import node from "../assets/img/node.svg";
 import react from "../assets/img/react.svg";
@@ -10,6 +12,10 @@ import java from "../assets/img/java-logo.svg";
 import springBoot from "../assets/img/spring-boot.svg";
 import python from "../assets/img/python.svg";
 import flask from "../assets/img/flask.svg";
+import csharp from "../assets/img/new-logos/c--4.svg";
+import dotnet from "../assets/img/new-logos/dot-net-core-7.svg";
+import sqlServer from "../assets/img/new-logos/microsoft-sql-server-1.svg";
+import mysql from "../assets/img/new-logos/mysql-logo-pure.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/color-sharp.png"
@@ -57,6 +63,14 @@ export const Skills = () => {
                                 <h5>JavaScript</h5>
                             </div>
                             <div className="item">
+                                <img src={tsc} alt="Image" />
+                                <h5>TypeScript</h5>
+                            </div>
+                            <div className="item">
+                                <img src={jest} alt="Image" />
+                                <h5>Jest</h5>
+                            </div>
+                            <div className="item">
                                 <img src={react} alt="Image" />
                                 <h5>React</h5>
                             </div>
@@ -91,6 +105,22 @@ export const Skills = () => {
                             <div className="item">
                                 <img src={gcp} alt="Image" />
                                 <h5>GCP</h5>
+                            </div>
+                            <div className="item">
+                                <img src={csharp} alt="Image" />
+                                <h5>C#</h5>
+                            </div>
+                            <div className="item">
+                                <img style={{height: '150px'}} src={dotnet} alt="Image" />
+                                <h5>.NET Core</h5>
+                            </div>
+                            <div className="item">
+                                <img style={{height: '150px'}} src={sqlServer} alt="Image" />
+                                <h5>SQL Server</h5>
+                            </div>
+                            <div className="item">
+                                <img style={{height: '150px'}} src={mysql} alt="Image" />
+                                <h5>MySQL</h5>
                             </div>
                         </Carousel>
                     </div>
