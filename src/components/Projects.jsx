@@ -10,12 +10,35 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg7 from "../assets/img/final.jpg";
 import projImg8 from "../assets/img/blog.png";
 import projImg9 from "../assets/img/paintclone.png";
+import twitterBotImg from "../assets/img/twitter-bot.png";
+import techMasterImg from "../assets/img/tech-master.png";
 // import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
   const projects = [
+    {
+      title: "Twitter Bot",
+      description: "Beep boop! My historical databases are whirring! Here's what happened #OnThisDay.",
+      imgUrl: twitterBotImg,
+      repoUrl: "https://github.com/Anas-M-Ardah/Twitter-Bot",
+      liveUrl: "https://x.com/IdrisTheBot"
+    },
+    {
+      title: "Tech Master",
+      description: "Developed a website for Tech Master, an ICT and smart solutions company, showcasing their services and expertise.",
+      imgUrl: techMasterImg,
+      repoUrl: "https://github.com/Anas-M-Ardah/TechMaster",
+      liveUrl: "https://technology-master.com/",
+    },
+    {
+      title: "Joke Teller",
+      description: "a fun app that fetches and tells jokes",
+      imgUrl: projImg1,
+      repoUrl: "https://github.com/Anas-M-Ardah/joke-teller",
+      liveUrl: "https://anas-m-ardah.github.io/Joke-Teller/",
+    },
     {
       title: "E-Commerce Backend System",
       description: "a backend system for an e-commerce website",
@@ -29,13 +52,6 @@ export const Projects = () => {
       imgUrl: projImg5,
       repoUrl: "https://github.com/Anas-M-Ardah/Visit-Petra",
       liveUrl: "https://anas-m-ardah.github.io/Visit-Petra/",
-    },
-    {
-      title: "Joke Teller",
-      description: "a fun app that fetches and tells jokes",
-      imgUrl: projImg1,
-      repoUrl: "https://github.com/Anas-M-Ardah/joke-teller",
-      liveUrl: "https://anas-m-ardah.github.io/Joke-Teller/",
     },
     {
       title: "Simon Says",
@@ -77,7 +93,7 @@ export const Projects = () => {
       imgUrl: projImg9,
       repoUrl: "https://github.com/Anas-M-Ardah/Paint-Clone",
       liveUrl: "https://anas-m-ardah.github.io/Paint-Clone/",
-    }
+    },
   ];
 
   return (
