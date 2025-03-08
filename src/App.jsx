@@ -11,23 +11,31 @@ import { useEffect } from 'react';
 function App() {
 
   useEffect(() => {
-    const initializeGA = () => {
-      try {
-        ReactGA.initialize('YOUR-MEASUREMENT-ID');
-        ReactGA.send({ hitType: "pageview", page: window.location.pathname });
-        
-        // Test if GA is loaded
-        if (window.ga && ga.create) {
-          console.log('GA is properly loaded');
-        } else {
-          console.warn('GA might not be properly loaded');
-        }
-      } catch (error) {
-        console.error('GA initialization error:', error);
-      }
-    };
+    try {
+      ReactGA.initialize('G-7VT3WR0Y9P');
+      
+      // Send basic pageview
+      ReactGA.send("pageview");
+      
+      // Send detailed pageview
+      ReactGA.send({
+        hitType: "pageview",
+        page: window.location.pathname,
+        title: document.title,
+        location: window.location.href
+      });
   
-    initializeGA();
+      // Send user timing
+      ReactGA.send({
+        hitType: "timing",
+        timingCategory: "JS Dependencies",
+        timingVar: "load",
+        timingValue: 0
+      });
+  
+    } catch (error) {
+      console.error('GA4 Error:', error);
+    }
   }, []);
 
   return (
