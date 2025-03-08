@@ -11,10 +11,23 @@ import { useEffect } from 'react';
 function App() {
 
   useEffect(() => {
-    // Initialize Google Analytics
-    ReactGA.initialize('G-7VT3WR0Y9P');
-    // Send pageview
-    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+    const initializeGA = () => {
+      try {
+        ReactGA.initialize('YOUR-MEASUREMENT-ID');
+        ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+        
+        // Test if GA is loaded
+        if (window.ga && ga.create) {
+          console.log('GA is properly loaded');
+        } else {
+          console.warn('GA might not be properly loaded');
+        }
+      } catch (error) {
+        console.error('GA initialization error:', error);
+      }
+    };
+  
+    initializeGA();
   }, []);
 
   return (
