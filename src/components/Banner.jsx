@@ -4,7 +4,7 @@ import { Col, Row } from "react-bootstrap";
 import { useState, useEffect } from "react";
 
 function Banner () {
-    const resumeLink = 'https://drive.google.com/file/d/1_CWVFRuvZ5mzXi7ondYHtgg2WwHr4iqR/view?usp=drive_link';
+    const resumeLink = 'https://drive.google.com/file/d/1jjlgQrdkRE74HukmoXhI88mzsBTVCXjX/view?usp=sharing';
     const toRotate = ["a Web Developer", "an Associate Cloud Engineer", "a Software Engineer", "a Backend Developer"];
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
